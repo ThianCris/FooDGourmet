@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconarchaver.io/Iconarchive-Fat-Sugar-Food-Double-Cheeseburger.512.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Menu - Gourmet</title>
+    <style>
+        .menu-section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .menu-title {
+            font-size: 4rem; /* Aumenta o tamanho da fonte */
+            margin: 40px 0; /* Aumenta a margem superior e inferior */
+            color: var(--red); /* Mantém a cor vermelha */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Aumenta a sombra do texto */
+            font-weight: bold; /* Mantém o peso da fonte */
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo claro para destaque */
+            padding: 10px; /* Espaçamento interno para o fundo */
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-card {
+            background: var(--white);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .menu-card h3 {
+            font-size: 1.5rem;
+            margin: 15px;
+        }
+
+        .menu-card p {
+            margin: 0 15px 15px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .menu-card span {
+            display: block;
+            margin: 15px;
+            font-weight: bold;
+            color: var(--red);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="index.html" class="logo">F<span>oo</span>D G<span>our</span>met</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a href="menu.html">Menu</a></li>
+                <li class="nav-item"><a href="contato.html">Contato</a></li>
+                <li class="nav-item"><a href="entra.html">Entrar</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="menu">
+            <!-- ícones ou botões do menu -->
+          </div>
+        <section class="menu-section">
+            <h1 class="menu-title">Nosso Cardápio</h1>
+            <div class="menu-container">
+                <div class="menu-card">
+                    <img src="img/frangoequiabo.jpg" alt="Prato 1" height="200px">
+                    <h3>Frango com Quiabo</h3>
+                    <p>Frango cozido com quiabo, temperado com alho, cebola e temperos, servido com arroz e polenta.</p>
+                    <span class="price">R$ 25,00</span>
+                    <button class="add-to-cart" data-name="Frango com Quiabo" data-price="25,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/picanha.jpeg" alt="Prato 2" height="200px">
+                    <h3>Picanha na Brasa</h3>
+                    <p>Corte de picanha grelhado na brasa, temperado com sal grosso e servido com farofa.</p>
+                    <span class="price">R$ 50,00</span>
+                    <button class="add-to-cart" data-name="Picanha na Brasa" data-price="50,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/moqueca.jpg" alt="Prato 3" height="200px">
+                    <h3>Moqueca de Lambarí</h3>
+                    <p>Peixe lambarí cozido em um molho de tomate, cebola, pimentão, coentro e leite de coco.</p>
+                    <span class="price">R$ 30,00</span>
+                    <button class="add-to-cart" data-name="Moqueca de Lambari" data-price="30,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/linguica.jpg" alt="Prato 4" height="200px">
+                    <h3>Linguiça Artesanal com Farofa</h3>
+                    <p>Linguiça caseira grelhada, acompanhada de farofa temperada com cebola, alho e salsinha.</p>
+                    <span class="price">R$ 25,00</span>
+                    <button class="add-to-cart" data-name="Linguica Artesanal com Farofa" data-price="25,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/galinhada.jpeg" alt="Prato 5" height="200px">
+                    <h3>Galinhada</h3>
+                    <p>Frango cozido com arroz e açafrão, aromatizado com ervas e acompanhado de salada.</p>
+                    <span class="price">R$ 28,00</span>
+                    <button class="add-to-cart" data-name="Galinhada" data-price="28,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/feijoada.jpeg" alt="Prato 6" height="200px">
+                    <h3>Feijoada</h3>
+                    <p>Feijão preto cozido com carnes selecionadas, servido com arroz, farofa, couve refogada, laranja e molho de pimenta.</p>
+                    <span class="price">R$ 20,00</span>
+                    <button class="add-to-cart" data-name="Feijoada" data-price="20,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/macarrao.jpg" alt="Prato 7" height="200px">
+                    <h3>Macarronada</h3>
+                    <p>Massa fresca coberta com molho à bolonhesa, preparado com carne moída, tomate e ervas, finalizada com queijo parmesão ralado. Um clássico saboroso e reconfortante.</p>
+                    <span class="price">R$ 22,00</span>
+                    <button class="add-to-cart" data-name="Macarronada" data-price="22,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/costelinha.jpg" alt="Prato 8" height="200px">
+                    <h3>Costelinha de Porco</h3>
+                    <p>Costela assada, servida com molho barbecue e acompanhamentos como batata frita ou purê de batatas.</p>
+                    <span class="price">R$ 32,00</span>
+                    <button class="add-to-cart" data-name="Costelinha de Porco" data-price="32,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/salada.jpg" alt="Prato 9" height="200px">
+                    <h3>Salada</h3>
+                    <p>Mix de folhas verdes frescas, tomate cereja, pepino, cenoura ralada e queijo feta, regada com molho balsâmico. Leve, crocante e cheia de sabor!</p>
+                    <span class="price">R$ 15,00</span>
+                    <button class="add-to-cart" data-name="Salada" data-price="15,00">Adicionar ao carrinho</button>
+                </div>
+                <h1 class="menu-title">Bebidas</h1>
+                <div class="menu-container">
+                <div class="menu-card">
+                    <img src="img/refrigerante.jpg" alt="Prato 10" height="200px">
+                    <h3>Refrigerante Lata</h3>
+                    <p>Refrigerante lata 350ml.</p>
+                    <span class="price">R$ 5,00</span>
+                    <button class="add-to-cart" data-name="Refri Lata" data-price="5,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/cocacola.jpg" alt="Prato 11" height="200px">
+                    <h3>Coca-Cola</h3>
+                    <p>Coca-cola 2L.</p>
+                    <span class="price">R$ 8,00</span>
+                    <button class="add-to-cart" data-name="Coca Cola 2L" data-price="8,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/suco.jpg" alt="Prato 12" height="200px">
+                    <h3>Suco de Maracujá</h3>
+                    <p>Delicioso suco natural de maracujá. Jarra de 1L.</p>
+                    <span class="price">R$ 12,00</span>
+                    <button class="add-to-cart" data-name="Suco de Maracujá" data-price="12,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/sucolata.jpg" alt="Prato 13" height="200px">
+                    <h3>Suco Lata</h3>
+                    <p>Suco lata 350ml.</p>
+                    <span class="price">R$ 4,00</span>
+                    <button class="add-to-cart" data-name="Suco Lata" data-price="4,00">Adicionar ao carrinho</button>
+                </div>
+                <div class="menu-card">
+                    <img src="img/sucolaranja.jpg" alt="Prato 14" height="200px">
+                    <h3>Suco de Laranja</h3>
+                    <p>Delicioso suco natural de laranja. Jarra de 1L.</p>
+                    <span class="price">R$ 10,00</span>
+                    <button class="add-to-cart" data-name="Suco de Laranja" data-price="10,00">Adicionar ao carrinho</button>
+                </div>
+                <!-- Adicione mais pratos conforme necessário -->
+            </div>
+        </section>
+    </main>
+    <h2>Carrinho</h2>
+    <div id="cart">
+      <ul id="cart-list"></ul>
+      <div id="cart-summary">
+        <p>Total de itens: <span id="total-items">0</span></p>
+        <p>Total: R$ <span id="total-price">0.00</span></p>
+        <button id="clear-cart">Limpar Carrinho</button>
+        <p></p>
+        <button id="btn-enviar" onclick="confirmarPedido()">Enviar Pedido</button>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
